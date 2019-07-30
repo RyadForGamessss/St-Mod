@@ -11,7 +11,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "ID حقك") return;
+  if (message.author.id !== "478146426887471104") return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
@@ -39,12 +39,12 @@ if (message.content.startsWith(prefix + 'setavatar')) {
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
 
-if (message.content.startsWith(prefix + 'ImDzG')) {
+if (message.content.startsWith(prefix + 'YaGirLiMe')) {
   client.user.setGame(argresult, "https://www.twitch.tv/peery13");
      console.log('test' + argresult);
     message.channel.sendMessage(`:white_check_mark: ${argresult}`)
 } 
-if (message.content.startsWith(prefix + 'setgame')) {
+if (message.content.startsWith(prefix + 'YaGirLiMe SetGame')) {
   client.user.setGame(argresult);
      console.log('test' + argresult);
     message.channel.sendMessage(`:white_check_mark: ${argresult}`)
