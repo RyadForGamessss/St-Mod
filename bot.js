@@ -5,7 +5,7 @@ var client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Welcome Bro ${client.user.tag}!`);
 });
-var prefix = '#'
+var prefix = '-'
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
@@ -39,15 +39,15 @@ if (message.content.startsWith(prefix + 'setavatar')) {
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
 
-if (message.content.startsWith(prefix + 'setT')) {
+if (message.content.startsWith(prefix + 'ImDzG')) {
   client.user.setGame(argresult, "https://www.twitch.tv/peery13");
      console.log('test' + argresult);
-    message.channel.sendMessage(`Streaming: **${argresult}`)
+    message.channel.sendMessage(`:white_check_mark: ${argresult}`)
 } 
 if (message.content.startsWith(prefix + 'setgame')) {
   client.user.setGame(argresult);
      console.log('test' + argresult);
-    message.channel.sendMessage(`Playing: **${argresult}`)
+    message.channel.sendMessage(`:white_check_mark: ${argresult}`)
 } 
 
 
